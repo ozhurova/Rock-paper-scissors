@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0 auto;
+    background: url('img/table.png') center no-repeat;
+    background-size: cover;
+}
+
+#score {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 20px 0 20px;
+}
+
+#player1 {
+    color: red;
+}
+
+#player2 {
+    color: green;
+}
+
+#score1, #score2 {
+    display: inline;
+}
+
+#gameZone {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#gameZone_text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.item_gameZone {
+    width: 30%;
+}
+
+
+#gameZone_Player1, #gameZone_Player2 {
+    display: none;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+#choice {
+    display: flex;
+    flex-direction: row;
+    flex: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    opacity: 0;
+}
+
+.card {
+    height: 100%;
+    max-width: 402px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rock {
+    background: url("img/rockHS.png") center no-repeat;
+    background-size: contain;
+}
+
+.scissors {
+    background: url("img/scissorsHS.png") center no-repeat;
+    background-size: contain;
+}
+
+.paper {
+    background: url("img/paperHS.png") center no-repeat;
+    background-size: contain;
+}
+
+span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#restart {
+    width: max-content;
+    padding: 20px 40px;
+    margin: 30px auto 0;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #a10404;
+    box-shadow: 0px 3px 3px 2px rgb(31 31 31);
+    border: 1px solid rgb(31 31 31);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background .5s ease;
+}
+
+#restart:hover {
+    background-color: #fc1010;
+}
+
+@media (max-width: 1440px) {
+    #gameZone_text {
+        font-size: 40px;
+    }
+    #restart {
+        font-size: 25px;
+    }
+    #score {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #gameZone_text {
+        font-size: 30px;
+    }
+    #restart {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    #score {
+        font-size: 30px;
+    }
+    #gameZone_text {
+        font-size: 20px;
+    }
+    #restart {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #score {
+        font-size: 25px;
+    }
+    #gameZone_text {
+        font-size: 16px;
+    }
+    #restart {
+        font-size: 10px;
+    }
+}
