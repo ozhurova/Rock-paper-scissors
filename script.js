@@ -103,7 +103,7 @@ function img_animation(){
 
     
 function validWin(countPlayer1, countPlayer2){
-    const winScore = 1
+    const winScore = 3
     if(+countPlayer1 === winScore ){
         setTimeout(() => {
             gameZone_text.textContent="поздравляю, Вы выиграли";
